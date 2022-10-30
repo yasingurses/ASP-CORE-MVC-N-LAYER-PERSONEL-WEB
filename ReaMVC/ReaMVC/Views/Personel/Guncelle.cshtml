@@ -1,0 +1,42 @@
+﻿@model EntityLayer.Concrete.Personel
+
+@{
+    ViewData["Title"] = "Guncelle";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<h1>Personel Güncelle</h1>
+
+<form asp-action="Guncelle" asp-controller="Personel" method="post">
+      <div class="mb-3">
+        <label for="PersonelID" class="form-label">Personel ID </label>
+        <input type="text" class="form-control" asp-for="PersonelID">
+        </div>
+        <div class="mb-3">
+        <label for="PersonelName" class="form-label">Personel Adı</label>
+        <input type="text" class="form-control" asp-for="PersonelName">
+        </div>
+    <div class="mb-3">
+        <label for="PersonelName" class="form-label">Personel Doğum Tarihi</label>
+        <input type="date" class="form-control" asp-for="PersonelDate">
+    </div>
+    <div class="mb-3">
+        <label for="PersonelName" class="form-label">Personel Sektor  </label>
+        <input type="text" class="form-control" asp-for="PersonelSektor">
+    </div>
+    <div class="mb-3">
+        <label for="PersonelName" class="form-label">Personel Mail  </label>
+        <input type="text" class="form-control" asp-for="PersonelMail">
+    </div>
+    <div class="mb-3">
+        <label for="PersonelName" class="form-label">Personel Phone  </label>
+        <input type="text" class="form-control" asp-for="PersonelPhone">
+    </div>
+    <div class="mb-3">
+        <label for="PersonelName" class="form-label">Personel Adress  </label>
+        <input type="text" class="form-control" asp-for="PersonelAdress">
+    </div>
+    <button type="submit" class="btn btn-primary">PERSONELİ GÜNCELLE </button>
+</form>
+
+

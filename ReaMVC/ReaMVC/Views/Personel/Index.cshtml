@@ -1,0 +1,54 @@
+﻿@{
+	ViewData["Title"] = "Main";
+	Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+@using EntityLayer.Concrete
+@model List<Personel>
+
+	 
+   
+<table id="example" class="display" style="width:100%">
+	 <thead>
+	<tr><th>Personel ID</th>
+		<th>Personel Name</th>
+		<th>Personel Date</th>
+		<th>Personel Sektor</th>
+		<th>Personel Mail</th>
+		<th>Personel Phone</th>
+		<th>Personel Adress</th>
+		<th>İŞLEMLER</th>
+	 
+		
+	</tr>
+	</thead>
+	<tbody>
+	@foreach(var a in Model){
+		<tr>
+			<td>@a.PersonelID</td>
+			<td>@a.PersonelName</td>
+			<td>@a.PersonelDate.ToString("dd-MMM-yyyy")</td>
+			<td>@a.PersonelSektor</td>
+			<td>@a.PersonelMail</td>
+			<td>@a.PersonelPhone</td>
+			<td>@a.PersonelAdress</td>
+			<td>
+				<a onclick="return confirm('Silmek istediğinize eminmisiniz?');" asp-controller="Personel" asp-action="Sil" asp-route-id="@a.PersonelID" class="btn btn-danger">sil</a>
+				<br>
+				<a asp-controller="Personel" asp-action="Guncelle2" asp-route-id="@a.PersonelID" class="btn btn-warning">güncelle</a>
+			</td>
+			 
+		</tr>
+	}
+	</tbody>
+</table>
+ <div class=" ">
+
+        <a href="/Personel/Ekle" class="btn btn-primary">Personel Ekle</a> 
+	 
+
+    </div>
+
+
+
+	

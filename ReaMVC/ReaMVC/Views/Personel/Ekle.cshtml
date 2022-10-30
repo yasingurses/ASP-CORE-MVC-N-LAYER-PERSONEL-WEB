@@ -1,0 +1,37 @@
+﻿@model EntityLayer.Concrete.Personel
+@{
+    ViewData["Title"] = "Ekle";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<h1>Personel Ekle</h1>
+
+<form asp-action="Ekle" asp-controller="Personel" method="post">
+    <div class="mb-3">
+        <label for="hastane_ad" class="form-label">Personel Adı</label>
+        <input asp-for="PersonelName" type="text" class="form-control" >
+
+    </div>
+    <div class="mb-3">
+        <label for="hastane_sehir" class="form-label">Personel Doğum Tarihi</label>
+        <input type="date" class="form-control" asp-for="PersonelDate">
+    </div>
+    <div class="mb-3">
+        <label for="hastane_sehir" class="form-label">Personel Sektor  </label>
+        <input type="text" class="form-control" asp-for="PersonelSektor">
+    </div>
+    <div class="mb-3">
+        <label for="hastane_sehir" class="form-label">   Personel Mail</label>
+        <input type="text" class="form-control" asp-for="PersonelMail">
+    </div>
+    <div class="mb-3">
+        <label for="hastane_sehir" class="form-label">  Personel Phone</label>
+        <input type="text" class="form-control" asp-for="PersonelPhone">
+    </div>
+    <div class="mb-3">
+        <label for="hastane_sehir" class="form-label">PersonelAdress</label>
+        <input type="text" class="form-control" asp-for="PersonelAdress">
+    </div>
+    <button type="submit" class="btn btn-primary">PERSONEL EKLE</button>
+</form>
+
