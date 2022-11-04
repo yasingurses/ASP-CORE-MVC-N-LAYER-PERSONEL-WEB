@@ -40,6 +40,7 @@ namespace ReaMVC
            );
             services.AddAuthenticationCore();
             services.AddHttpContextAccessor();
+            //Role doðrulamanýn servisini ekliyoruz.
             services.AddAuthorization(options =>
             {
                 options.AddPolicy("Admin",

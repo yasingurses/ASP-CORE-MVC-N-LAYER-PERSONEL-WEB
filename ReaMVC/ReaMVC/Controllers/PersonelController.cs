@@ -25,7 +25,10 @@ namespace ReaMVC.Controllers
         public PersonelController(IToastNotification toastNotification)
         {
             _toastNotification = toastNotification;
-        }
+        }//Role dağıtırken claim yapısı içerisinde belirttiğimiz tabloda olan rolleri yazarak kullanıcının rolünü sorgulayarak
+         //giriş yapmasını sağlıyoruz.
+         //
+        [Authorize(Roles = "istanbul")]
         [Authorize(Roles ="izmir")]
         public IActionResult Index()
         {
@@ -72,7 +75,8 @@ namespace ReaMVC.Controllers
         }
         [HttpPost]
         public async Task<IActionResult> Login(Personel pers)
-        {
+        {//Bir admin giriş değişkeni tanımlayıp Firstordefault methodu ile kullanıcının girmiş olduğu bilgiyle veritabanındakı adı karşılaştırdaktan sonra
+         //if şartları arasına yapılacakları belirtiyoruz.  
             Context c = new Context();
             var admingiris = c.Personels.FirstOrDefault(x => x.PersonelName == pers.PersonelName && x.PersonelPassword == pers.PersonelPassword);
             if (admingiris != null)//eğer textler boş gelmez ise
@@ -198,7 +202,7 @@ namespace ReaMVC.Controllers
             var values = pm.Listing();
             return View(values);
         }
-        [Authorize(Roles ="nus")]
+        [Authorize(Roles ="istanbul")]
         public IActionResult PersonelMuhasabe()
         {
             var values = pm.Listing();
