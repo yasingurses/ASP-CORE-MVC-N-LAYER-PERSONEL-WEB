@@ -452,3 +452,5 @@ C:\Users\Yasin\source\repos\ReaMVC\ReaMVC\bin\Debug\net5.0\NToastNotify.Views.dl
 C:\Users\Yasin\source\repos\ReaMVC\ReaMVC\bin\Debug\net5.0\NToastNotify.dll
 C:\Users\Yasin\source\repos\ReaMVC\ReaMVC\obj\Debug\net5.0\staticwebassets\ReaMVC.StaticWebAssets.xml
 C:\Users\Yasin\source\repos\ReaMVC\ReaMVC\obj\Debug\net5.0\Razor\Views\Personel\Guncelle2.cshtml.g.cs
+C:\Users\Yasin\source\repos\ReaMVC\ReaMVC\obj\Debug\net5.0\Razor\Views\Personel\PersonelList.cshtml.g.cs
+C:\Users\Yasin\source\repos\ReaMVC\ReaMVC\obj\Debug\net5.0\Razor\Views\Personel\PersonelMuhasabe.cshtml.g.cs

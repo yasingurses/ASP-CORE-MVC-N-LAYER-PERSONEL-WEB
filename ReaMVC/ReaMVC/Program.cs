@@ -22,5 +22,6 @@ namespace ReaMVC
                 {
                     webBuilder.UseStartup<Startup>();
                 });
+            
     }
 }

@@ -40,6 +40,11 @@ namespace ReaMVC
            );
             services.AddAuthenticationCore();
             services.AddHttpContextAccessor();
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("Admin",
+                     policy => policy.RequireRole("Admin"));
+            });
 
         }
 

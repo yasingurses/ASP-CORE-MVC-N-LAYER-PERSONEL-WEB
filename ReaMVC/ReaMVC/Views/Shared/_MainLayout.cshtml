@@ -13,7 +13,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Resume - Start Bootstrap Theme</title>
+    <title>My Personel Page</title>
 
     <!-- Bootstrap core CSS -->
     <link href="~/resume/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -36,7 +36,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
-            <span class="d-block d-lg-none">Start Bootstrap</span>
+             
             <span class="d-none d-lg-block">
                 <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="~/resume/img/indir.jpg" alt="">
             </span>
@@ -61,11 +61,17 @@
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" asp-controller="Personel" asp-action="interests">İlgi Alanları</a>
                 </li>
+                   <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" asp-controller="Personel" asp-action="PersonelList">Personeller</a>
+                </li>
                 
                 @if (HttpContextAccessor.HttpContext.User.Identity.IsAuthenticated)
                 {
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" asp-controller="Personel" asp-action="Index">Listeleme Yap</a>
+                        <a class="nav-link js-scroll-trigger" asp-controller="Personel" asp-action="Index">Admin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" asp-controller="Personel" asp-action="PersonelMuhasabe">Muhasebe</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" asp-controller="Personel" asp-action="Cik">Çıkış Yap</a>

@@ -1,0 +1,42 @@
+﻿@{
+	ViewData["Title"] = "Main";
+	Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+@using EntityLayer.Concrete
+@model List<Personel>
+
+
+
+<table id="example" class="display" style="width:100%">
+	<thead>
+		<tr>
+		 
+			<th>Personel Name</th>
+			<th>Personel Date</th>
+			<th>Personel Sektor</th>
+			<th>Personel Mail</th>
+		 
+
+
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var a in Model)
+		{
+			<tr>
+				 
+				<td>@a.PersonelName</td>
+				<td>@a.PersonelDate.ToString("dd-MMM-yyyy")</td>
+				<td>@a.PersonelSektor</td>
+				<td>@a.PersonelMail</td>
+			 
+		 
+			</tr>
+		}
+	</tbody>
+</table>
+ 
+
+
+

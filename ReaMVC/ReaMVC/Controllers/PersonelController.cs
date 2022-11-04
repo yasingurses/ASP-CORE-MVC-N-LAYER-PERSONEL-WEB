@@ -26,7 +26,7 @@ namespace ReaMVC.Controllers
         {
             _toastNotification = toastNotification;
         }
-        [Authorize]
+        [Authorize(Roles ="izmir")]
         public IActionResult Index()
         {
             var values = pm.Listing();
@@ -52,7 +52,7 @@ namespace ReaMVC.Controllers
             return View();
 
         }
-        [Authorize]
+      
         public IActionResult skills()
         {
             return View();
@@ -78,8 +78,11 @@ namespace ReaMVC.Controllers
             if (admingiris != null)//eğer textler boş gelmez ise
             {
                 var claims = new List<Claim> // claim ypaısı oluşuyor
-                { new Claim(ClaimTypes.Name,pers.PersonelName)
+                { new Claim(ClaimTypes.Name,admingiris.PersonelName),
+                 new Claim(ClaimTypes.Role, admingiris.PersonelAdress)
                 };
+                
+
                 var useridentity = new ClaimsIdentity(claims, "Login");//identitiy tanımı yapıp loginden aldırıyoruz.
                 ClaimsPrincipal principal = new ClaimsPrincipal(useridentity);//burdaki principal sorgu alanım.
                                                                               //ve bu alandan loginden gelenleri sorguluyorum.
@@ -190,5 +193,17 @@ namespace ReaMVC.Controllers
             }
             return RedirectToAction("Index");
         }
+        public IActionResult PersonelList()
+        {
+            var values = pm.Listing();
+            return View(values);
+        }
+        [Authorize(Roles ="nus")]
+        public IActionResult PersonelMuhasabe()
+        {
+            var values = pm.Listing();
+            return View(values);
+        }
+
     }
 }

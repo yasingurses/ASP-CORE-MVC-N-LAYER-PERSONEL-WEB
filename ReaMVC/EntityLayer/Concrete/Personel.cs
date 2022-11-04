@@ -18,5 +18,9 @@ namespace EntityLayer.Concrete
         public string PersonelMail { get; set; }
         public string PersonelPhone { get; set; }
         public string PersonelAdress { get; set; }
+       
+        
+        
+        
     }
 }
