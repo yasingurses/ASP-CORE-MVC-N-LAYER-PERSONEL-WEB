@@ -28,7 +28,7 @@ namespace ReaMVC.Controllers
         }//Role dağıtırken claim yapısı içerisinde belirttiğimiz tabloda olan rolleri yazarak kullanıcının rolünü sorgulayarak
          //giriş yapmasını sağlıyoruz.
          //
-        [Authorize(Roles = "istanbul")]
+        
         [Authorize(Roles ="izmir")]
         public IActionResult Index()
         {

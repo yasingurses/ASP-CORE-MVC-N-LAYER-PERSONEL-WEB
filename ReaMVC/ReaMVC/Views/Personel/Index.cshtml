@@ -2,7 +2,8 @@
 	ViewData["Title"] = "Main";
 	Layout = "~/Views/Shared/_MainLayout.cshtml";
 }
-
+@using Microsoft.AspNetCore.Authorization
+@inject IAuthorizationService AuthorizationService
 @using EntityLayer.Concrete
 @model List<Personel>
 
@@ -37,6 +38,10 @@
 				 
 				<a asp-controller="Personel" asp-action="Guncelle2" asp-route-id="@a.PersonelID" class="btn btn-warning">güncelle</a>
 			</td>
+			<td>
+
+			</td>
+
 			 
 		</tr>
 	}

@@ -3,6 +3,7 @@
 @using System.IO
 @using Microsoft.AspNetCore.Http
 @using System.Security.Claims
+ 
 <!DOCTYPE html>
 <html lang="en">
 
@@ -67,12 +68,33 @@
                 
                 @if (HttpContextAccessor.HttpContext.User.Identity.IsAuthenticated)
                 {
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" asp-controller="Personel" asp-action="Index">Admin</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" asp-controller="Personel" asp-action="PersonelMuhasabe">Muhasebe</a>
-                    </li>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        if (User.IsInRole("izmir"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link js-scroll-trigger" role="izmir" asp-controller="Personel" asp-action="Index">Admin</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link js-scroll-trigger" asp-controller="Personel" asp-action="PersonelMuhasabe">Muhasebe</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link js-scroll-trigger" asp-controller="Personel" asp-action="PersonelMuhasabe">Adminin Görebildikleri</a>
+                            </li>
+                        }
+                        if (User.IsInRole("istanbul"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link js-scroll-trigger" asp-controller="Personel" asp-action="PersonelMuhasabe">Muhasebe</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link js-scroll-trigger" asp-controller="Personel" asp-action="PersonelMuhasabe">Muhasebenin Görebildikleri</a>
+                            </li>
+                            
+                        }
+                    }
+                    
+                 
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" asp-controller="Personel" asp-action="Cik">Çıkış Yap</a>
                     </li>
