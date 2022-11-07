@@ -70,7 +70,7 @@
                 {
                     @if (User.Identity.IsAuthenticated)
                     {
-                        if (User.IsInRole("izmir"))
+                        if (User.IsInRole("Admin"))
                         {
                             <li class="nav-item">
                                 <a class="nav-link js-scroll-trigger" role="izmir" asp-controller="Personel" asp-action="Index">Admin</a>
@@ -82,7 +82,7 @@
                                 <a class="nav-link js-scroll-trigger" asp-controller="Personel" asp-action="PersonelMuhasabe">Adminin Görebildikleri</a>
                             </li>
                         }
-                        if (User.IsInRole("istanbul"))
+                        if (User.IsInRole("Muhasebe"))
                         {
                             <li class="nav-item">
                                 <a class="nav-link js-scroll-trigger" asp-controller="Personel" asp-action="PersonelMuhasabe">Muhasebe</a>

@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace DataAccessLayer.Migrations
 {
-    public partial class migs1 : Migration
+    public partial class migsss1 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -38,8 +38,7 @@ namespace DataAccessLayer.Migrations
                     PersonelMail = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     PersonelPhone = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     PersonelAdress = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    PersonelRole = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    PersonelRoles = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    PersRole = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {

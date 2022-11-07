@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lxuRNSAvaU/vTUi5DxaEworSU6F7UtO1H5fYRZzKzq5tNN/S7e0Bmwrwc70xmiSIPkSqxK57yKnMeZNR7R9Iaw==",
+  "dgSpecHash": "zjcrWfJhpMNlLy+CxZSJxWO09NrklAR5Z8zIpSgjN5RbxJPet+rNTjtOX5JYPBy8zgfglEDVWCgSBS8PmnkHmA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Yasin\\source\\repos\\ReaMVC\\BusinessLayer\\BusinessLayer.csproj",
+  "projectFilePath": "C:\\Users\\Yasin\\Desktop\\ASP-CORE-MVC-N-LAYER-PERSONEL-WEB\\ReaMVC\\BusinessLayer\\BusinessLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Yasin\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Yasin\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

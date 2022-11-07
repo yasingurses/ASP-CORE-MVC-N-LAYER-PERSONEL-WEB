@@ -10544,11 +10544,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Yasin\\source\\repos\\ReaMVC\\ReaMVC\\ReaMVC.csproj",
+      "projectUniqueName": "C:\\Users\\Yasin\\Desktop\\ASP-CORE-MVC-N-LAYER-PERSONEL-WEB\\ReaMVC\\ReaMVC\\ReaMVC.csproj",
       "projectName": "ReaMVC",
-      "projectPath": "C:\\Users\\Yasin\\source\\repos\\ReaMVC\\ReaMVC\\ReaMVC.csproj",
+      "projectPath": "C:\\Users\\Yasin\\Desktop\\ASP-CORE-MVC-N-LAYER-PERSONEL-WEB\\ReaMVC\\ReaMVC\\ReaMVC.csproj",
       "packagesPath": "C:\\Users\\Yasin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Yasin\\source\\repos\\ReaMVC\\ReaMVC\\obj\\",
+      "outputPath": "C:\\Users\\Yasin\\Desktop\\ASP-CORE-MVC-N-LAYER-PERSONEL-WEB\\ReaMVC\\ReaMVC\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Yasin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -10565,14 +10565,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Yasin\\source\\repos\\ReaMVC\\BusinessLayer\\BusinessLayer.csproj": {
-              "projectPath": "C:\\Users\\Yasin\\source\\repos\\ReaMVC\\BusinessLayer\\BusinessLayer.csproj"
+            "C:\\Users\\Yasin\\Desktop\\ASP-CORE-MVC-N-LAYER-PERSONEL-WEB\\ReaMVC\\BusinessLayer\\BusinessLayer.csproj": {
+              "projectPath": "C:\\Users\\Yasin\\Desktop\\ASP-CORE-MVC-N-LAYER-PERSONEL-WEB\\ReaMVC\\BusinessLayer\\BusinessLayer.csproj"
             },
-            "C:\\Users\\Yasin\\source\\repos\\ReaMVC\\DataAccessLayer\\DataAccessLayer.csproj": {
-              "projectPath": "C:\\Users\\Yasin\\source\\repos\\ReaMVC\\DataAccessLayer\\DataAccessLayer.csproj"
+            "C:\\Users\\Yasin\\Desktop\\ASP-CORE-MVC-N-LAYER-PERSONEL-WEB\\ReaMVC\\DataAccessLayer\\DataAccessLayer.csproj": {
+              "projectPath": "C:\\Users\\Yasin\\Desktop\\ASP-CORE-MVC-N-LAYER-PERSONEL-WEB\\ReaMVC\\DataAccessLayer\\DataAccessLayer.csproj"
             },
-            "C:\\Users\\Yasin\\source\\repos\\ReaMVC\\EntityLayer\\EntityLayer.csproj": {
-              "projectPath": "C:\\Users\\Yasin\\source\\repos\\ReaMVC\\EntityLayer\\EntityLayer.csproj"
+            "C:\\Users\\Yasin\\Desktop\\ASP-CORE-MVC-N-LAYER-PERSONEL-WEB\\ReaMVC\\EntityLayer\\EntityLayer.csproj": {
+              "projectPath": "C:\\Users\\Yasin\\Desktop\\ASP-CORE-MVC-N-LAYER-PERSONEL-WEB\\ReaMVC\\EntityLayer\\EntityLayer.csproj"
             }
           }
         }

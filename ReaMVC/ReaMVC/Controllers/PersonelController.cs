@@ -29,7 +29,7 @@ namespace ReaMVC.Controllers
          //giriş yapmasını sağlıyoruz.
          //
         
-        [Authorize(Roles ="izmir")]
+        [Authorize(Roles ="Admin")]
         public IActionResult Index()
         {
             var values = pm.Listing();
@@ -83,7 +83,7 @@ namespace ReaMVC.Controllers
             {
                 var claims = new List<Claim> // claim ypaısı oluşuyor
                 { new Claim(ClaimTypes.Name,admingiris.PersonelName),
-                 new Claim(ClaimTypes.Role, admingiris.PersonelAdress)
+                 new Claim(ClaimTypes.Role, admingiris.PersRole)
                 };
                 
 
@@ -202,7 +202,7 @@ namespace ReaMVC.Controllers
             var values = pm.Listing();
             return View(values);
         }
-        [Authorize(Roles ="istanbul")]
+        [Authorize(Roles ="Muhasebe")]
         public IActionResult PersonelMuhasabe()
         {
             var values = pm.Listing();

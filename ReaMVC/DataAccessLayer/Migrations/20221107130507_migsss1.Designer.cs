@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DataAccessLayer.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20221103133711_migs1")]
-    partial class migs1
+    [Migration("20221107130507_migsss1")]
+    partial class migsss1
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -58,6 +58,9 @@ namespace DataAccessLayer.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<string>("PersRole")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("PersonelAdress")
                         .HasColumnType("nvarchar(max)");
 
@@ -74,12 +77,6 @@ namespace DataAccessLayer.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PersonelPhone")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("PersonelRole")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("PersonelRoles")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PersonelSektor")

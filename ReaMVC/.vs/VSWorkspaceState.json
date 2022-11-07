@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\DataAccessLayer",
+    "\\DataAccessLayer\\Concrete",
+    "\\EntityLayer",
+    "\\EntityLayer\\Concrete",
+    "\\ReaMVC\\Views",
+    "\\ReaMVC\\Views\\Shared"
+  ],
+  "SelectedNode": "\\DataAccessLayer\\DataAccessLayer.csproj",
+  "PreviewInSolutionExplorer": false
+}

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Yasin\\source\\repos\\ReaMVC\\EntityLayer\\EntityLayer.csproj": {}
+    "C:\\Users\\Yasin\\Desktop\\ASP-CORE-MVC-N-LAYER-PERSONEL-WEB\\ReaMVC\\EntityLayer\\EntityLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Yasin\\source\\repos\\ReaMVC\\EntityLayer\\EntityLayer.csproj": {
+    "C:\\Users\\Yasin\\Desktop\\ASP-CORE-MVC-N-LAYER-PERSONEL-WEB\\ReaMVC\\EntityLayer\\EntityLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Yasin\\source\\repos\\ReaMVC\\EntityLayer\\EntityLayer.csproj",
+        "projectUniqueName": "C:\\Users\\Yasin\\Desktop\\ASP-CORE-MVC-N-LAYER-PERSONEL-WEB\\ReaMVC\\EntityLayer\\EntityLayer.csproj",
         "projectName": "EntityLayer",
-        "projectPath": "C:\\Users\\Yasin\\source\\repos\\ReaMVC\\EntityLayer\\EntityLayer.csproj",
+        "projectPath": "C:\\Users\\Yasin\\Desktop\\ASP-CORE-MVC-N-LAYER-PERSONEL-WEB\\ReaMVC\\EntityLayer\\EntityLayer.csproj",
         "packagesPath": "C:\\Users\\Yasin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Yasin\\source\\repos\\ReaMVC\\EntityLayer\\obj\\",
+        "outputPath": "C:\\Users\\Yasin\\Desktop\\ASP-CORE-MVC-N-LAYER-PERSONEL-WEB\\ReaMVC\\EntityLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Yasin\\AppData\\Roaming\\NuGet\\NuGet.Config",

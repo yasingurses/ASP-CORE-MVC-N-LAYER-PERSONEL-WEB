@@ -56,6 +56,9 @@ namespace DataAccessLayer.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<string>("PersRole")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("PersonelAdress")
                         .HasColumnType("nvarchar(max)");
 
@@ -72,12 +75,6 @@ namespace DataAccessLayer.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PersonelPhone")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("PersonelRole")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("PersonelRoles")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PersonelSektor")
