@@ -20,7 +20,7 @@ namespace EntityLayer.Concrete
         public string PersonelAdress { get; set; }
         public string PersRole { get; set; }
         
-        
+        //adsadsadsadsdas
         
     }
 }
